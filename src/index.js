@@ -6,6 +6,6 @@ app.get("/", (req, res)=> {
   res.send("Bienvenido a la API RestFul")
 });
 
-app.listen(3000, ()=>{
-    console.log("Server escuchando por el puerto 3000");
+app.listen(process.env.PUERTO, ()=>{
+    console.log("Server escuchando por el puerto", process.env.PUERTO);
 });
